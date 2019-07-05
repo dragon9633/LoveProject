@@ -1,0 +1,31 @@
+
+git remote add origin git@github.com:dragon9633/LoveProject.git
+
+报错 fatal: remote origin already exists.
+
+删除远程仓库
+git remote rm origin
+
+===================================
+E:\project\cp\emptyFolder>git push -u origin master
+To github.com:dragon9633/LoveProject.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:dragon9633/LoveProject.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+先pull下来，解决冲突，再push回去
+git pull origin master
+
+
+=======================================
+Permission denied (publickey).
+
+
+===============================================
+
+$ ssh-keygen -t rsa -C "6168060@qq.com"
+创建密钥
